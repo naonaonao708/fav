@@ -1,0 +1,20 @@
+USERGUIDE for phosmoS
+
+phosmoS will read an AGI from Arabidopsis thaliana and will search the protein sequence for SnRK1 phosphorylation motifs. The output will give the gene name, and both partial and full phosphorylation motifs, as well as their location within the protein sequence.
+
+- the following files must be in the same folder : 
+phosmos.py, phosmos.sh and TAIR_gene_aliases_20130831 and TAIR10_pep_20110103_representative_gene_model_updated.txt from TAIR
+
+- works with Python version 2.7
+
+- to run from bash, go to terminal, change directory to the phosmos folder
+ 
+#source phosmoS.sh AT3G01090
+
+- EXAMPLE INPUT FOR RUNNING MULTIPLE AGIS (separated by 1 whitespace):
+
+#source phosmoS.sh AT1G22190 AT1G52880 AT1G52890 AT1G73920 AT1G74930 AT2G15970 AT2G33380 AT2G39050 #AT3G14230 AT3G56090 AT3G61890 AT4G05100 AT5G17490 AT5G48240
+
+- the results will appear as a text file in your phosmos folder (phosmoS_results.txt)
+
+- for more details, open the separate files and check the comments for specific packages you need to have installed.
